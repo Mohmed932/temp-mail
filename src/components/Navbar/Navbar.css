@@ -1,0 +1,79 @@
+.Navbar {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.Navbar-mail {
+  width: 80%;
+  height: 60%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Navbar-mail span,
+h3 {
+  padding: 20px;
+}
+.Navbar-mail h3 {
+  text-align: center;
+}
+.Navbar-mail span {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.temp-mail {
+  text-align: center;
+  margin: 50px 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 20px;
+  padding: 10px;
+}
+.email {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.email span {
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.email span:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media (max-width: 1080px) {
+  .Navbar {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .Navbar-mail {
+    width: 85%;
+  }
+  .Navbar-mail span {
+    padding: 10px;
+  }
+  .temp-mail {
+    font-size: 17px;
+    padding: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .temp-mail {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
